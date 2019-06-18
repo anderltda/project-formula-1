@@ -1,0 +1,42 @@
+import React, { PureComponent } from 'react';
+import { View } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Footer, FooterTab, Title, Thumbnail, ListItem, CheckBox, Button, Text, Icon, Left, Body, Right } from 'native-base';
+
+import style from './style';
+
+class Seasons extends PureComponent {
+
+    renderSeasons() {
+
+        let items = [];
+
+        for(let i = 0; i < 19; i++) {
+            const year = '20' + ( i > 9 ? i : `0${i}` );
+            items.push(
+                <Button style={ style.button }
+                    onPress={ () => this.props.handleParam(year) }
+                    key={ `season-${i}` } full light>
+                    <Text>
+                        { year }
+                    </Text>
+                </Button>
+            );
+        }
+        return items;
+    }
+
+    render() {
+        return (
+            <View style={ style.container }>
+
+            { this.renderSeasons() }
+ 
+          </View>
+            //<View style={ style.container }>
+             //   { this.renderSeasons() }
+            //</View>
+        );
+    }
+}
+
+export default Seasons;
