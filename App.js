@@ -2,20 +2,28 @@ import React from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Home from './pages/home';
-import Seasons from './pages/seasons';
+import Race from './pages/race';
+import Driver from './pages/driver';
+import Choose from './pages/choose';
 
 const AppNavigator = createStackNavigator({
     Home: {
         screen: Home,
     },
-    Seasons: {
-        screen: Seasons,
+    Race: {
+        screen: Race,
+	},
+	Driver: {
+        screen: Driver,
+	},
+	Choose: {
+        screen: Choose,
     },
 }, {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
         headerStyle: {
-            backgroundColor: '#333',
+            backgroundColor: '#ccc',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
