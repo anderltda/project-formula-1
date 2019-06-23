@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, Image } from 'react-native';
 import { List, ListItem, Text, Left, Body, Right } from 'native-base';
+import LogoTitle from '../../components/LogoTitle';
 import { SafeAreaView } from 'react-navigation';
 
 export default class Driver extends React.Component {
@@ -11,7 +12,7 @@ export default class Driver extends React.Component {
 
 	static navigationOptions = () => {
 		return {
-			title: 'Drivers',
+			headerTitle: <LogoTitle />,
 		};
 	}
 

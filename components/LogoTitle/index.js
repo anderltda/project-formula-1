@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Image, Platform } from 'react-native';
-import Logo from '../../assets/header_logo.png';
+import Logo from '../../assets/icon.png';
 
 export default class LogoTitle extends PureComponent {
 	render() {
@@ -14,9 +14,6 @@ export default class LogoTitle extends PureComponent {
 				marginLeft: -55
 			};
 
-		return (<Image
-			style={style}
-			source={Logo}
-		/>);
+		return (<Image style={style} source={Logo} />);
 	}
 }

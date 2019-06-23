@@ -10,7 +10,7 @@ class Drivers extends PureComponent {
 				<Card>
 					<CardItem>
 						<Left>
-							<Image source={require('../../assets/icon_f1.png')} />
+							<Image source={require('../../assets/capacete.png')} />
 							<Body>
 								<Text>{this.props.label}</Text>
 								<Text note>{this.props.value}</Text>

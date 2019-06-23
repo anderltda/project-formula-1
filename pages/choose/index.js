@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { SafeAreaView } from 'react-navigation';
+import LogoTitle from '../../components/LogoTitle';
 import Races from '../../components/Races';
 import Drivers from '../../components/Drivers';
 
@@ -17,7 +18,7 @@ export default class Choose extends React.Component {
 
 	static navigationOptions = () => {
 		return {
-			title: 'Choose',
+			headerTitle: <LogoTitle />,
 		};
 	}
 
